@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap');
+
+/* Tailwind base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+}
+
+/* Custom Pentagon Shape */
+.clip-pentagon {
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+/* Diagonal Line Design Element */
+.clip-diagonal {
+  clip-path: polygon(0 100%, 100% 100%, 50% 0);
+}
+/* In your CSS or Tailwind custom CSS */
+.expandable-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+}
+
+.expandable-content.show {
+  max-height: 1000px; /* Ensure this is large enough to contain your content */
+  padding: 1rem;
+}
+
+.tech-images {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.tech-images img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 0.5rem;
+}
+.transition-container {
+  transition: max-height 0.7s ease-in-out, opacity 0.7s ease-in-out;
+  overflow: hidden;
+}
+
+.transition-container.collapsed {
+  max-height: 0;
+  opacity: 0;
+}
+
+.transition-container.expanded {
+  max-height: 400px; /* Adjust based on content */
+  opacity: 1;
+}
