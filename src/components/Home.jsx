@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import myPic from '../assets/my-pic.jpg'; // Update the path to your profile picture
+import myPic from '../assets/my-pic.jpg'; // Ensure this path is correct
 import AOS from 'aos'; // Import AOS library
 import 'aos/dist/aos.css'; // Import AOS styles
 
@@ -24,7 +24,7 @@ const Home = () => {
             I'm a 23-year-old software engineer from Tunisia, pursuing a Master's in Data Science and AI. With a Bachelor's in Software Engineering, I'm driven by a passion for crafting innovative applications and delving into emerging technologies. I thrive on turning bold ideas into reality and exploring the endless possibilities of tech.
           </p>
           {/* Diagonal Line Separator */}
-          <div className="absolute top-1/2 left-full transform -translate-x-16 -translate-y-1/2 rotate-90 w-7/12 h-0.5 bg-teal-500"></div>
+          <div className="absolute top-1/2 left-full transform -translate-x-1/2 -translate-y-1/2 rotate-45 w-7/12 h-0.5 bg-teal-500"></div>
         </div>
         {/* Profile Picture Section */}
         <div

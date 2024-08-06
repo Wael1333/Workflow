@@ -31,7 +31,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center mt-4">
-        <p className="text-sm">&copy; 2024 Khalfaoui wael. All rights reserved.</p>
+        <p className="text-sm">&copy; 2024 Khalfaoui Wael. All rights reserved.</p>
       </div>
     </footer>
   );

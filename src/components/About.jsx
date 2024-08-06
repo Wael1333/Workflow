@@ -91,7 +91,7 @@ const About = () => {
           <h2 className="text-3xl font-extrabold text-gray-800 mb-4">Languages</h2>
           <ul className="list-disc list-inside text-md text-gray-600">
             <li><strong>Arabic:</strong> Native</li>
-            <li><strong>English:</strong> Expert</li>
+            <li><strong>English:</strong> Fluent</li>
             <li><strong>French:</strong> Advanced</li>
             <li><strong>German:</strong> Beginner</li>
           </ul>
