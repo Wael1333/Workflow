@@ -20,14 +20,15 @@ const App = () => {
     <Router>
       <div className="flex flex-col min-h-screen">
         <Navbar />
-        <main className="flex-grow">
+        <div>
+          <Home></Home>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/skills" element={<Skills />} />
           </Routes>
-        </main>
+          </div>
         <Footer />
       </div>
     </Router>
