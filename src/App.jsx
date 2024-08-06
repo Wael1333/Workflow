@@ -17,7 +17,7 @@ AOS.init({
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/Workflow"> {/* Add basename here */}
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">
