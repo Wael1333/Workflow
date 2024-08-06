@@ -21,8 +21,6 @@ const App = () => {
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">
-          {/* Render Home component directly */}
-          <Home />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
