@@ -26,6 +26,8 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/skills" element={<Skills />} />
+             {/* Redirect unknown paths to Home */}
+             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </main>
         <Footer />
