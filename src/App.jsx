@@ -22,7 +22,7 @@ const App = () => {
         <Navbar />
         <div className='flex-auto'>
         <Home/>
-        </div>
+        
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -31,6 +31,7 @@ const App = () => {
             <Route path="/skills" element={<Skills />} />
           </Routes>
         </main>
+        </div>
         <Footer />
       </div>
     </Router>
